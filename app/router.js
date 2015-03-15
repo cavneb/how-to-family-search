@@ -6,6 +6,15 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('home', { path: '/' });
+
+  this.route('family_search', function() {
+    this.route('introduction');
+  });
+
+  this.route('puzzilla', function() {
+    this.route('introduction');
+  });
 });
 
 export default Router;
